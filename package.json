@@ -15,7 +15,6 @@
     "minify": "uglifyjs --compress --mangle --output lib/index.min.js -- lib/index.js",
     "format": "prettier --write \"src/**/*.tsx\"",
     "lint": "tslint -p tsconfig.json",
-    "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
